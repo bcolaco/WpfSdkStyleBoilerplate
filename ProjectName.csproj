@@ -1,20 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop" ToolsVersion="15.0">
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
 		<OutputType>WinExe</OutputType>
+    <UseWpf>true</UseWpf>
 	</PropertyGroup>
-
-  <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild;UpdteDesignTimeXaml</Generator>
-    </ApplicationDefinition>
-
-    <Page Include="**\*.xaml" Exclude="App.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild;UpdteDesignTimeXaml</Generator>
-    </Page>
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="PresentationCore" />
