@@ -1,0 +1,1 @@
+Boilerplate for WPF projects with SDK style csproj file.
